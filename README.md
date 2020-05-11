@@ -1,11 +1,12 @@
 # davinci-api-wrap
 
-[反馈bug>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
+[反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
 
 ## 目录
 
 * [IDEA使用方法](#intelliJ-idea)
 * [VS Code使用方法](#vs-code)
+* [编写者](#编写者)
 
 # IntelliJ IDEA
 
@@ -51,3 +52,6 @@
 5. 将解压后的api和你的工程同时添加至工作区
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/vscode%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%96%87%E4%BB%B6%E5%A4%B9.gif?raw=true)
+
+## 编写者
+[马尚](https://github.com/lilith-avatar-sharifma)，[袁晨曦](https://github.com/lilith-avatar-yenyuan)，[陶季传](https://github.com/lilith-avatar-ropztao)
