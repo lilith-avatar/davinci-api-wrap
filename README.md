@@ -1,5 +1,7 @@
 # davinci-api-wrap
 
+一个在外部编辑器联想编辑器内部API的工程，目前支持[IDEA](https://www.jetbrains.com/)和[VSCode](https://code.visualstudio.com/)
+
 [反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
 
 ## 目录
