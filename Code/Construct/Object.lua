@@ -172,4 +172,4 @@ Object.OnDescendantRemoved = nil
 ---@type SignalEvent
 Object.OnDestroyed = nil
 
-return
+return Object

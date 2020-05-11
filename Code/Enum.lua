@@ -144,4 +144,10 @@ Enum.AudioSourceState =
     Paused = 2, ---   暂停
     Stopped = 3, ---  停止播放
 }
+---@class Enum.Platform
+Enum.Platform =
+{
+    Windows = 1, --- Windows平台
+    Android = 2, --- Android平台
+}
 return Enum
