@@ -17,10 +17,12 @@
 
 ## 目录
 
+* [项目进度](#项目进度)
 * [IDEA使用方法](#intelliJ-idea)
 * [VS Code使用方法](#vs-code)
 * [如何贡献](#如何贡献)
 * [编写者](#编写者)
+
 
 
 ## 相关项目
@@ -28,6 +30,17 @@
 [Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: A intergated framework.
 
 [Emmy Lua](https://github.com/lilith-avatar-yenyuan/IntelliJ-EmmyLua) - Lua IDE/Debugger Plugin for IntelliJ IDEA
+
+## 项目进度
+
+| 目录                                 | 进度 |
+| ------------------------------------ | :------: |
+| api文档内容                           |    ✔     |
+| 框架api                             |    ✔       |
+| wiki文档api                         |    未知     |
+
+
+
 
 # IntelliJ IDEA
 
@@ -81,9 +94,10 @@
 
 如果有未被收录的api,可以直接pull到本仓库或者[提一个issue](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)。
 
-api代码支持 [EmmyLua Doc标注](https://emmylua.github.io/)
+api代码支持 [EmmyLua Doc标注](https://emmylua.github.io/annotation.html)
 
 ## 编写者
 * [@马尚](https://github.com/lilith-avatar-sharifma)
 * [@袁晨曦](https://github.com/lilith-avatar-yenyuan)
 * [@陶季传](https://github.com/lilith-avatar-ropztao)
+
