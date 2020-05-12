@@ -2,7 +2,7 @@
 
 一个在外部编辑器联想编辑器内部API的工程，目前支持[IDEA](https://www.jetbrains.com/)和[VSCode](https://code.visualstudio.com/)
 
-[![Jetbrains plugin](https://img.shields.io/badge/EmmyLua-JetBrain%20Plugin-red)](https://plugins.jetbrains.com/plugin/9768-emmylua)
+[![Jetbrains plugin](https://img.shields.io/badge/EmmyLua-JetBrain%20plugin-red)](https://plugins.jetbrains.com/plugin/9768-emmylua)
 [![](https://img.shields.io/badge/EmmyLua-VSCode%20plugin-blue)](https://marketplace.visualstudio.com/items?itemName=tangzx.emmylua)
 
 [反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
@@ -10,16 +10,24 @@
 
 批注格式：
 
-* [EmmyLua Doc - 英文](https://emmylua.github.io/)
+* [EmmyLua Doc](https://emmylua.github.io/) - 英文
 
-* [EmmyLua Doc - 中文](https://emmylua.github.io/zh_CN/)
+* [EmmyLua 中文文档](https://emmylua.github.io/zh_CN/) - 中文
 
 
 ## 目录
 
 * [IDEA使用方法](#intelliJ-idea)
 * [VS Code使用方法](#vs-code)
+* [如何贡献](#如何贡献)
 * [编写者](#编写者)
+
+
+## 相关项目
+
+[Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: A intergated framework.
+
+[Emmy Lua](https://github.com/lilith-avatar-yenyuan/IntelliJ-EmmyLua) - Lua IDE/Debugger Plugin for IntelliJ IDEA
 
 # IntelliJ IDEA
 
@@ -69,5 +77,13 @@
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/vscode%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%96%87%E4%BB%B6%E5%A4%B9.gif?raw=true)
 
+## 如何贡献
+
+如果有未被收录的api,可以直接pull到本仓库或者[提一个issue](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)。
+
+api代码支持 [EmmyLua Doc标注](https://emmylua.github.io/)
+
 ## 编写者
-[马尚](https://github.com/lilith-avatar-sharifma)，[袁晨曦](https://github.com/lilith-avatar-yenyuan)，[陶季传](https://github.com/lilith-avatar-ropztao)
+* [@马尚](https://github.com/lilith-avatar-sharifma)
+* [@袁晨曦](https://github.com/lilith-avatar-yenyuan)
+* [@陶季传](https://github.com/lilith-avatar-ropztao)
