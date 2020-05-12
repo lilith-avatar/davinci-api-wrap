@@ -30,22 +30,22 @@ AudioSource.State = 0
 AudioSource.Volume = 0
 
 ---音频淡出并暂停
----@type fun(FadeTime:number)
+---@param FadeTime number
 function AudioSource:FadePause(FadeTime)
 end
 
 ---音频淡入并播放
----@type fun(FadeTime:number)
+---@param FadeTime number
 function AudioSource:FadePlay(FadeTime)
 end
 
 ---音频淡出并停止播放
----@type fun(FadeTime:number)
+---@param FadeTime number
 function AudioSource:FadeStop(FadeTime)
 end
 
 ---音频淡入并取消暂停，继续播放
----@type fun(FadeTime:number)
+---@param FadeTime number
 function AudioSource:FadeUnPause(FadeTime)
 end
 
@@ -63,7 +63,8 @@ function AudioSource:Play()
 end
 
 ---设置淡入淡出的音量与时间
----@type fun(Volume:number , FadeTime:number)
+---@param Volume number
+---@param FadeTime number
 function AudioSource:SetFadeVolume(Volume,FadeTime)
 end
 

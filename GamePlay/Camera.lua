@@ -87,17 +87,20 @@ Camera.WorldOffset = Vector3.Zero
 Camera.Yaw = 0
 
 ---给摄像机添加水平与垂直方向上的角度偏移。
----@type fun(movePixel:Vector2)
+---@param movePixel Vector2
 function Camera:CameraMove(movePixel)
 end
 
 ---给摄像机添加水平与垂直方向上的角度偏移。
----@type fun(moveRotation:Vector2)
+---@param moveRotation Vector2
 function Camera:CameraMoveInDegree(moveRotation)
 end
 
 ---仅在社交模式下可用,将摄像机关注点聚焦到目标对象上,使玩家永远看向目标。
----@type fun(focusTarget:Object , minDistance:number, maxDistance:number,turnBack:boolean)
+---@param focusTarget Object 
+---@param minDistance number 
+---@param maxDistance number
+---@param turnBack boolean
 function Camera:FocusTo(focusTarget,minDistance,maxDistance,turnBack)
 end
 
@@ -107,19 +110,19 @@ function Camera:MousePositionDir()
 end
 
 ---获得一条从摄像机出发且经过屏幕点的射线。
----@type fun(screenPoint:Vector3)
+---@param screenPoint Vector3
 ---@return Ray
 function Camera:ScreenPointToRay(screenPoint)
 end
 
 ---屏幕坐标转视口坐标。
----@type fun(screenPoint:Vector3)
+---@param screenPoint Vector3
 ---@return Vector3
 function Camera:ScreenToViewportPoint(screenPoint)
 end
 
 ---屏幕坐标转世界坐标。
----@type fun(screenPoint:Vector3)
+---@param screenPoint Vector3
 ---@return Vector3
 function Camera:ScreenToWorldPoint(screenPoint)
 end
@@ -129,30 +132,34 @@ function Camera:UnFocus()
 end
 
 ---获得一条从摄像机出发且经过视口点的射线。
----@type fun(viewportPoint:Vector3)
+---@param viewportPoint Vector3
 ---@return Ray
 function Camera:ViewportPointToRay(viewportPoint)
 end
 
 ---视口坐标转屏幕坐标。
+---@param viewportPoint Vector3
 ---@type fun(viewportPoint:Vector3)
 ---@return Vector3
 function Camera:ViewportToScreenPoint(viewportPoint)
 end
 
 ---视口坐标转世界坐标。
+---@param viewportPoint Vector3
 ---@type fun(viewportPoint:Vector3)
 ---@return Vector3
 function Camera:ViewportToWorldPoint(viewportPoint)
 end
 
 ---世界坐标转屏幕坐标。
+---@param worldPoint Vector3
 ---@type fun(worldPoint:Vector3)
 ---@return Vector3
 function Camera:WorldToScreenPoint(worldPoint)
 end
 
 ---世界坐标转视口坐标。
+---@param worldPoint Vector3
 ---@type fun(worldPoint:Vector3)
 ---@return Vector3
 function Camera:WorldToViewportPoint(worldPoint)
