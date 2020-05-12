@@ -4,6 +4,8 @@
 
 [反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
 
+[批注格式：EmmyLua Doc](https://emmylua.github.io/)
+
 ## 目录
 
 * [IDEA使用方法](#intelliJ-idea)
