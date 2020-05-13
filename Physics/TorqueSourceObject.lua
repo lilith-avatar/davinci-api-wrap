@@ -11,7 +11,8 @@ TorqueSourceObject.TorqueDir = Vector3.zero
 TorqueSourceObject.TorqueSize = 0
 
 ---返回当前扭矩的数值。
----@type fun(TorqueNum:Vector3 )
+---@param TorQueNum Vector3
+---@type fun(TorqueNum:Vector3)
 function TorqueSourceObject:GetTorque(TorQueNum)
 end
 
