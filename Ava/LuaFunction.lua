@@ -4,7 +4,7 @@
 ---@see https://wiki.lilithgames.com/x/tSkMAg
 
 --- 检查并尝试转换为数值，如果无法转换则返回 0
----@param mixed value 要检查的值
+---@param mixed value
 ---@param [integer base] 进制，默认为十进制
 ---@return number
 function checknumber(value, base)
@@ -12,27 +12,27 @@ function checknumber(value, base)
 end
 
 --- 检查是否是有效的number类型
----@param number
+---@param num number
 function isValidNumber(num)
     return num ~= nil and num > 0
 end
 
 --- 检查并尝试转换为整数，如果无法转换则返回 0
----@param mixed value 要检查的值
+---@param value any
 ---@return integer
 function checkint(value)
     return math.round(checknumber(value))
 end
 
 --- 检查并尝试转换为布尔值，除了 nil 和 false，其他任何值都会返回 true
----@param mixed value 要检查的值
+---@param value any
 ---@return boolean
 function checkbool(value)
     return (value ~= nil and value ~= false)
 end
 
 --- 检查值是否是一个表格，如果不是则返回一个空表格
----@param mixed value 要检查的值
+---@param value any
 ---@return table
 function checktable(value)
     if type(value) ~= 'table' then
@@ -66,8 +66,8 @@ function table.nums(t)
 end
 
 --- 返回指定表格中的所有键
----@param k-v table
----@return keys' table
+---@param hashtable table
+---@return number
 ---@usage example
 --- local hashtable = {a = 1, b = 2, c = 3}
 -- local keys = table.keys(hashtable)
@@ -81,8 +81,8 @@ function table.keys(hashtable)
 end
 
 --- 返回指定表格中的所有值
----@param k-v table
----@return values' table
+---@param hashtable table
+---@return number
 ---@usage example
 -- local hashtable = {a = 1, b = 2, c = 3}
 -- local values = table.values(hashtable)
@@ -98,8 +98,8 @@ function table.values(hashtable)
 end
 
 --- 将来源表格中所有键及其值复制到目标表格对象中，如果存在同名键，则覆盖其值
----@param target table
----@param source table
+---@param dest table
+---@param src table
 ---@usage example
 -- local dest = {a = 1, b = 2}
 -- local src  = {c = 3, d = 4}
@@ -112,9 +112,9 @@ function table.merge(dest, src)
 end
 
 --- 在目标表格的指定位置插入来源表格，如果没有指定位置则连接两个表格
----@param target table
----@param source table
----@param start index
+---@param dest table
+---@param src table
+---@param begin index
 ---@usage example #1
 -- local dest = {1, 2, 3}
 -- local src  = {4, 5, 6}
@@ -143,9 +143,9 @@ end
 
 --- 从表格中查找指定值，返回其索引，如果没找到返回 false
 ---@param array table
----@param target value
----@param start index
----@return index or false
+---@param value number
+---@param begin number
+---@return number,false
 ---@usage example
 -- local array = {"a", "b", "c"}
 -- print(table.indexof(array, "b"))
