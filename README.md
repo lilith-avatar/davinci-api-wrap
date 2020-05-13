@@ -2,10 +2,10 @@
 
 一个在外部编辑器联想编辑器内部API的工程，目前支持[IDEA](https://www.jetbrains.com/)和[VSCode](https://code.visualstudio.com/)
 
+[![](https://img.shields.io/badge/Davinci%20Api-official%20doc-brightgreen)](http://api.projectdavinci.com/)
 [![Jetbrains plugin](https://img.shields.io/badge/EmmyLua-JetBrain%20plugin-red)](https://plugins.jetbrains.com/plugin/9768-emmylua)
 [![](https://img.shields.io/badge/EmmyLua-VSCode%20plugin-blue)](https://marketplace.visualstudio.com/items?itemName=tangzx.emmylua)
 
-[![](https://img.shields.io/badge/Davinci%20Api-official%20doc-brightgreen)](http://api.projectdavinci.com/)
 
 
 [反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
@@ -40,10 +40,10 @@
 | ------------------------------------ | :------: |
 | api文档内容                           |    ✔     |
 | 框架api                             |    ✔       |
+| LuaFunction api                     |    20%     |
 | wiki文档api                         |    未知     |
 | api函数注解更改                         |    ✔     |
 | 长期维护                         |    0%     |
-
 
 
 
