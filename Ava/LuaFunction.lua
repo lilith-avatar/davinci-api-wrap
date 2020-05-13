@@ -466,8 +466,8 @@ end
 
 --- 将一个字符串表转为数字表
 --- 若元素不是数字或者无法转换为数字,则此元素为原值
----@param tb 待转换的表
----@return 转换完成的表
+---@param tb table
+---@return table
 function table.string2number(tb)
 	local res = {}
 	for k, v in pairs(tb) do
@@ -482,7 +482,7 @@ end
 
 --- 打印table中的所有内容
 ---@param data table
----@param @boolean showMetatable 是否显示元表
+---@param showMetatable boolean
 function table.dump(data, showMetatable)
     local result, tab = {}, '    '
     local function _dump(data, showMetatable, lastCount)
