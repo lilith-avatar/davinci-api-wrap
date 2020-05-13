@@ -5,6 +5,9 @@
 [![Jetbrains plugin](https://img.shields.io/badge/EmmyLua-JetBrain%20plugin-red)](https://plugins.jetbrains.com/plugin/9768-emmylua)
 [![](https://img.shields.io/badge/EmmyLua-VSCode%20plugin-blue)](https://marketplace.visualstudio.com/items?itemName=tangzx.emmylua)
 
+[![](https://img.shields.io/badge/Davinci%20Api-official%20doc-brightgreen)](http://api.projectdavinci.com/)
+
+
 [反馈bug或提出api增加需求>>](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)
 
 
