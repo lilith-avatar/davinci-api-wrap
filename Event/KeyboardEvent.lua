@@ -1,6 +1,5 @@
 ---按键监听事件, 右键该脚本，选择Keymap可以绑定想要监听的按键。
 ---第一参数(KeyState): 按键类型 Enum.KeyState.KeyStatePress | Enum.KeyState.KeyStateHold | Enum.KeyState.KeyStateRelease。
-
 ---@class KeyboardEvent:Object
 local KeyboardEvent = {}
 

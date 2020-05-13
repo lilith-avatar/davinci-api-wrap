@@ -1,6 +1,5 @@
 ---玩家加入事件，当玩家加入时会触发。
 ---第一参数(Player): 代表加入的玩家。
-
 ---@class PlayerAddEvent:Object
 local PlayerAddEvent = {}
 

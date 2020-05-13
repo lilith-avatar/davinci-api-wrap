@@ -1,5 +1,6 @@
 ---@class StartPortal:Object
 local StartPortal = {}
+
 ---出生点矩形区域的长度。
 StartPortal.Length = 0
 

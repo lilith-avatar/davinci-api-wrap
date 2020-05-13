@@ -1,5 +1,6 @@
 ---@class PlayerInstance:Object
 local PlayerInstance = {}
+
 ---加速度。
 PlayerInstance.Acceleration = 0
 

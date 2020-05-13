@@ -1,5 +1,4 @@
 ---@class NpcAvatarInstance:PlayerAvatarInstance
-
 local NpcAvatarInstance = {}
 
 

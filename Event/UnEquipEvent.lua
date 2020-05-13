@@ -1,5 +1,4 @@
 ---当配件被卸载时触发。
-
 ---@class UnEquipEvent:Object
 local UnEquipEvent = {}
 

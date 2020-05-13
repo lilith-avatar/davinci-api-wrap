@@ -1,5 +1,6 @@
 ---@class Team:Object
 local Team = {}
+
 ---阵营能容纳的最大人数。
 Team.CurrentMaxMemberNum = 0
 

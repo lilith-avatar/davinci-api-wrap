@@ -1,5 +1,4 @@
 ---自定义事件，会监听由FireEventTo触发的与该节点名一样的事件。
-
 ---@class CustomEvent
 local CustomEvent = {}
 

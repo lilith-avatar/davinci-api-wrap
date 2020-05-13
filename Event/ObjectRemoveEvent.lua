@@ -1,5 +1,4 @@
 ---对象删除事件. 当父类对象被删除时会触发。
-
 ---@class ObjectRemoveEvent:Object
 local ObjectRemoveEvent = {}
 

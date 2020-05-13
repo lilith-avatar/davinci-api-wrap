@@ -1,5 +1,4 @@
 ---当配件被装备到人物骨骼上时触发。
-
 ---@class EquipEvent:Object
 local EquipEvent = {}
 

@@ -4,7 +4,6 @@
 ---第二参数(HitObject): 与父类对象碰撞的对象；
 ---第三参数(HitPoint): 碰撞点；
 ---第四参数(HitNormal): 碰撞法线。
-
 ---@class CollisionEvent:Object
 local CollisionEvent = {}
 

@@ -1,6 +1,5 @@
 ---玩家断开连接事件。
 ---第一参数(Player): 断开的玩家。
-
 ---@class PlayerRemoveEvent:Object
 local PlayerRemoveEvent = {}
 

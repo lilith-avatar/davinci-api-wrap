@@ -1,5 +1,6 @@
 ---@class Accessory
 local Accessory = {}
+
 ---角速度。
 Accessory.AngularVelocity = Vector3.Zero
 
