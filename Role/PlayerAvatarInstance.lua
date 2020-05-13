@@ -1,8 +1,6 @@
 ---@class PlayerAvatarInstance:Object
 local PlayerAvatarInstance = {}
 
-
-
 ---身体配件
 PlayerAvatarInstance.BodyAccessory = ''
 

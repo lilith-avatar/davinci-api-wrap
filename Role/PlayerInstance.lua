@@ -140,22 +140,29 @@ PlayerInstance.OnSpawn = nil
 ---状态改变时触发。
 ---@type SignalEvent
 PlayerInstance.OnStateChanged = nil
+
 ---在持枪的运动状态下，人物以给定的上下倾斜角与速度播放瞄准动作。
+---@param pitch number
+---@param speed number
 ---@type fun(pitch:number , speed:number)
 function PlayerInstance:Aim(pitch, speed)
 end
 
 ---在持武器的运动状态下，人物以给定的速度播放指定序号的攻击动作
+---@param animationID number
+---@param speed number
 ---@type fun(animationID:number , speed:number)
 function PlayerInstance:Attack(animationID, speed)
 end
 
 ---播放拉弓的蓄力动作
+---@param chargeAngle number
 ---@type fun(chargeAngle:number )
 function PlayerInstance:BowCharge(chargeAngle)
 end
 
 ---播放投掷的蓄力动作
+---@param animId number
 ---@type fun(animId:number )
 function PlayerInstance:Charge(animId)
 end
@@ -169,11 +176,14 @@ function PlayerInstance:EndCrouch()
 end
 
 ---人物以给定的速度播放装备武器的动作。
+---@param speed number
 ---@type fun(speed:number )
 function PlayerInstance:Equip(speed)
 end
 
 ---人物以某个速度转向某个方向。
+---@param direction Vector3
+---@param speed number
 ---@type fun(direction:Vector3 , speed:number)
 function PlayerInstance:FaceToDir(direction, speed)
 end
@@ -191,6 +201,7 @@ function PlayerInstance:Jump()
 end
 
 ---人物向某个水平方向行走。
+---@param direction Vector2
 ---@type fun(direction:Vector2)
 function PlayerInstance:MoveTowards(direction)
 end
@@ -200,6 +211,7 @@ function PlayerInstance:Reborn()
 end
 
 ---持枪状态下人物以给定的速度播放填弹动作。
+---@param speed number
 ---@type fun(speed:number)
 function PlayerInstance:Reload(speed)
 end
@@ -213,6 +225,8 @@ function PlayerInstance:Sit()
 end
 
 ---人物以一定的碰撞体高度与碰撞体宽度进入蹲伏状态。
+---@param characterHeight number
+---@param characterWidth number
 ---@type fun(characterHeight:number, characterWidth:number)
 function PlayerInstance:StartCrouch(characterHeight, characterWidth)
 end
@@ -226,6 +240,7 @@ function PlayerInstance:StopCharge()
 end
 
 ---人物以给定的速度播放卸载武器的动作并回到默认的运动状态。
+---@param speed number
 ---@type fun(speed:number)
 function PlayerInstance:UnEquip(speed)
 end
