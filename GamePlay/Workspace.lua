@@ -49,6 +49,11 @@ end
 function world:GetPlayerByUserId(userId)
 end
 
+---获得房主（暂未开发）
+---@return PlayerAvatarInstance
+function world.GetHost()
+end
+
 ---玩家加入时触发。
 ---@type SignalEvent
 world.OnPlayerAdded = nil
