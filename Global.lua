@@ -2,6 +2,18 @@
 ---@type PlayerInstance
 localPlayer = nil
 
+---Player下的Local文件夹节点
+---@type Local
+localPlayer.Local = nil
+
+---Player下的姓名GUI节点
+---@type UiSurfaceUiObject
+localPlayer.NameGUI = nil
+
+---Player下的生命值GUI节点
+---@type UiSurfaceUiObject
+localPlayer.HealthGUI = nil
+
 ---对正在执行编写代码的脚本对象的引用。
 ---@type ScriptObject
 script = nil
@@ -26,11 +38,6 @@ end
 ---@return table
 function require(module)
 end
-
-
-
-
-
 
 
 
