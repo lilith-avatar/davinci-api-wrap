@@ -40,11 +40,7 @@
 | ------------------------------------ | :------: |
 | api文档内容                           |    ✔     |
 | 框架api                             |    ✔       |
-<<<<<<< HEAD
 | LuaFunction api                     |    20%     |
-=======
-| LuaFunction Api                    |    20%      |
->>>>>>> LuaFunctionApi
 | wiki文档api                         |    未知     |
 | api函数注解更改                         |    ✔     |
 | 长期维护                         |    0%     |
@@ -85,13 +81,13 @@
 
 2. 解压 zip
 
-3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) 并配置环境
+3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) 
 
 4. 安装 EmmyLua
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/EmmyLua%E5%AE%89%E8%A3%85.gif?raw=true)
 
-5. 配置EmmyLua的Java_Home路径
+5. 将JDK的安装路径配置在EmmyLua的Java_Home路径中(注意转义符)
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/JavaHome%E9%85%8D%E7%BD%AE.gif?raw=true)
 
