@@ -30,7 +30,7 @@
 
 ## 相关项目
 
-[Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: A intergated framework.
+[Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: An intergated framework.
 
 [Emmy Lua](https://github.com/lilith-avatar-yenyuan/IntelliJ-EmmyLua) - Lua IDE/Debugger Plugin for IntelliJ IDEA
 
@@ -40,7 +40,11 @@
 | ------------------------------------ | :------: |
 | api文档内容                           |    ✔     |
 | 框架api                             |    ✔       |
+<<<<<<< HEAD
 | LuaFunction api                     |    20%     |
+=======
+| LuaFunction Api                    |    20%      |
+>>>>>>> LuaFunctionApi
 | wiki文档api                         |    未知     |
 | api函数注解更改                         |    ✔     |
 | 长期维护                         |    0%     |
@@ -81,7 +85,7 @@
 
 2. 解压 zip
 
-3. 安装 JDK 并配置环境
+3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) 并配置环境
 
 4. 安装 EmmyLua
 
