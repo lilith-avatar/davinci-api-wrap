@@ -13,6 +13,7 @@ end
 
 --- 检查是否是有效的number类型
 ---@param num number
+---@return number
 function isValidNumber(num)
     return num ~= nil and num > 0
 end
@@ -54,6 +55,7 @@ end
 --- 计算表格包含的字段数量
 --- Lua table 的 "#" 操作只对依次排序的数值下标数组有效，table.nums() 则计算 table 中所有不为 nil 的值的个数。
 ---@param t table
+---@return number
 function table.nums(t)
     if t == nil then
         return 0
