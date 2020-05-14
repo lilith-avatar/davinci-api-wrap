@@ -6,11 +6,11 @@ localPlayer = nil
 ---@type Local
 localPlayer.Local = nil
 
----Player下的姓名GUI节点
+---Player下默认的姓名GUI节点
 ---@type UiSurfaceUiObject
 localPlayer.NameGUI = nil
 
----Player下的生命值GUI节点
+---Player下默认的生命值GUI节点
 ---@type UiSurfaceUiObject
 localPlayer.HealthGUI = nil
 
