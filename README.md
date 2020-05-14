@@ -30,7 +30,7 @@
 
 ## 相关项目
 
-[Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: A intergated framework.
+[Avatar ava](https://github.com/lilith-avatar/avatar-ava) - :+1: An intergated framework.
 
 [Emmy Lua](https://github.com/lilith-avatar-yenyuan/IntelliJ-EmmyLua) - Lua IDE/Debugger Plugin for IntelliJ IDEA
 
