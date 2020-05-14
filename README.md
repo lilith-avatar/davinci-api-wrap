@@ -81,7 +81,7 @@
 
 2. 解压 zip
 
-3. 安装 JDK 并配置环境
+3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) 并配置环境
 
 4. 安装 EmmyLua
 
