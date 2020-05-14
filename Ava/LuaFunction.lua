@@ -53,7 +53,7 @@ end
 
 --- 计算表格包含的字段数量
 --- Lua table 的 "#" 操作只对依次排序的数值下标数组有效，table.nums() 则计算 table 中所有不为 nil 的值的个数。
----@param table
+---@param t table
 function table.nums(t)
     if t == nil then
         return 0
@@ -182,7 +182,7 @@ function table.cleararray(array)
 end
 
 --- 清空k-v表格
----@param k-v table
+---@param hashtable table
 function table.clearhashtable(hashtable)
     if hashtable ~= nil then
         for k, v in pairs(hashtable) do
@@ -192,17 +192,17 @@ function table.clearhashtable(hashtable)
 end
 
 --- 清空表格
----@param table
+---@param t table
 ---@see table.clearhashtable
 function table.cleartable(t)
     table.clearhashtable(t)
 end
 
 --- 截取Array其中一段，startIndex从1开始 return截取后的新数组
----@param table array table
----@param @number start index
----@param @number length
----@return @table array table
+---@param array table
+---@param startIndex number
+---@param length number
+---@return table
 ---@usage example
 -- local array = {"a", "b", "c", "d"}
 -- print(table.subArray(array, 2, 2))
@@ -225,9 +225,9 @@ function table.subArray(array, startIndex, length)
 end
 
 --- 截取Array的后半段，startIndex从1开始 return截取后的新数组
----@param table array table
----@param @number start index
----@return @table array table
+---@param array table
+---@param startIndex number
+---@return table
 function table.subArrayByStartIndex(array, startIndex)
     if array ~= nil then
         local count = table.nums(array)
@@ -238,9 +238,9 @@ function table.subArrayByStartIndex(array, startIndex)
 end
 
 --- 从表格中查找指定值，返回其 key，如果没找到返回 nil
----@param table hash table
----@param any value
----@return key of value
+---@param hashtable table
+---@param value any
+---@return any
 ---@usage
 -- local hashtable = {name = "dualface", comp = "chukong"}
 -- print(table.keyof(hashtable, "chukong"))
@@ -255,6 +255,10 @@ function table.keyof(hashtable, value)
 end
 
 --- 从表格中删除指定值，返回删除的值的个数
+---@param array table
+---@param value any
+---@param removeall boolean
+---@return number
 ---@usage
 -- local array = {"a", "b", "c", "c"}
 -- print(table.removebyvalue(array, "c", true))
@@ -277,8 +281,8 @@ function table.removebyvalue(array, value, removeall)
 end
 
 --- 对表格中每一个值执行一次指定的函数，并用函数返回值更新表格内容
----@param table
----@param function fn 参数指定的函数具有两个参数，并且返回一个值。原型如下：
+---@param t table
+---@param fn function 参数指定的函数具有两个参数，并且返回一个值。原型如下：
 -- function map_function(value, key)
 --     return value
 -- end
@@ -302,8 +306,8 @@ function table.map(t, fn)
 end
 
 --- 对表格中每一个值执行一次指定的函数，但不改变表格内容
----@param table
----@param function fn 参数指定的函数具有两个参数，没有返回值。原型如下：
+---@param t table
+---@param fn function 参数指定的函数具有两个参数，没有返回值。原型如下：
 -- function map_function(value, key)
 --     -- no return here
 -- end
@@ -320,8 +324,8 @@ function table.walk(t, fn)
 end
 
 --- 对表格中每一个值执行一次指定的函数，如果该函数返回 false，则对应的值会从表格中删除
----@param table
----@param function fn 参数指定的函数具有两个参数，并且返回一个 boolean 值。原型如下：
+---@param t table
+---@param fn function 参数指定的函数具有两个参数，并且返回一个 boolean 值。原型如下：
 -- !!!!该方法有局限性，执行后会修改原表格t中值
 -- function map_function(value, key)
 --     return true or false
@@ -346,8 +350,8 @@ end
 
 --- 找到表格中每个符合matchFunc的条目
 ---@param array table
----@param match function, return T/F
----@return all elements matched, default is {}
+---@param matchFunc function
+---@return any
 function table.findAll(array, matchFunc)
     local ret, idx = {}, 1
     for i = 1, #array do
@@ -361,8 +365,8 @@ end
 
 --- 找到表格中每个符合matchFunc的条目，并执行walkFunc
 ---@param array table
----@param match function, return T/F
----@param walk function
+---@param matchFunc function
+---@param walkFunc function
 function table.findAllAndWalk(array, matchFunc, walkFunc)
     for i = 1, #array do
         if matchFunc(array[i]) then
@@ -372,8 +376,8 @@ function table.findAllAndWalk(array, matchFunc, walkFunc)
 end
 
 --- 在表格中插入一个新值
----@param array table
----@param new element
+---@param T table
+---@param elem any
 function table.insert_once(T, elem)
     for _, v in ipairs(T) do
         if v == elem then
@@ -385,9 +389,9 @@ end
 
 --- 遍历表格，确保其中的值唯一
 ---@function [parent=#table] unique
----@param table t 表格
----@param boolean bArray t是否是数组,是数组,t中重复的项被移除后,后续的项会前移
----@return table#table  包含所有唯一值的新表格
+---@param t table 表格
+---@param bArray boolean 是否是数组,是数组,t中重复的项被移除后,后续的项会前移
+---@return table 包含所有唯一值的新表格
 ---@usage
 -- 遍历表格，确保其中的值唯一
 -- local t = {"a", "a", "b", "c"} -- 重复的 a 会被过滤掉
@@ -415,8 +419,8 @@ function table.unique(t, bArray)
 end
 
 --- table 深度复制
----@param table
----@return a net table with same data
+---@param object table
+---@return table a net table with same data
 function table.deepcopy(object)
     local lookup_table = {}
     local function _copy(object)
@@ -436,6 +440,8 @@ function table.deepcopy(object)
 end
 
 --- table 浅度复制(不处理metatable)
+---@param orig table
+---@return table
 function table.shallowcopy(orig)
     local orig_type = type(orig)
     local copy
@@ -452,6 +458,8 @@ function table.shallowcopy(orig)
 end
 
 --- 获取or创建一个子表
+---@param tb table
+---@param key any
 function table.need(tb, key)
     if type(tb) == 'table' then
         local subTb = tb[key]
@@ -545,9 +553,9 @@ function table.dump(data, showMetatable)
 end
 
 --- 用指定字符或字符串分割输入字符串，返回包含分割结果的数组
----@param @string input 输入的字符串
----@param @string delimiter 分隔符
----@return array
+---@param input string
+---@param delimiter string
+---@return table
 ---@usage example #1
 -- local input = "Hello,World"
 -- local res = string.split(input, ",")
@@ -575,14 +583,14 @@ function string.split(input, delimiter)
 end
 
 --- 判断字符串是否为空或者长度为零
----@param @string 输入的字符串
+---@param inputStr string
 function string.isnilorempty(inputStr)
     return inputStr == nil or inputStr == ''
 end
 
 --- 去除输入字符串头部的空白字符，返回结果
----@param @string input
----@return @string
+---@param input string
+---@return string
 ---@usage example
 -- local input = "  ABC"
 -- print(string.ltrim(input))
@@ -597,8 +605,8 @@ function string.ltrim(input)
 end
 
 --- 去除输入字符串尾部的空白字符，返回结果
----@param @string input
----@return @string
+---@param input string
+---@return string
 ---@usage example
 -- local input = "ABC  "
 -- print(string.rtrim(input))
@@ -608,8 +616,8 @@ function string.rtrim(input)
 end
 
 --- 去掉字符串首尾的空白字符，返回结果
----@param @string input
----@return @string
+---@param input string
+---@return string
 function string.trim(input)
     input = string.gsub(input, '^[ \t\n\r]+', '')
     return string.gsub(input, '[ \t\n\r]+$', '')
@@ -617,7 +625,7 @@ end
 
 --- 将字符串的第一个字符转为大写，返回结果
 ---@param input string input
----@return @string
+---@return string
 ---@usage example
 -- local input = "hello"
 -- print(string.ucfirst(input))
@@ -631,8 +639,8 @@ function string.firstToUpper(str)
 end
 
 --- 计算 UTF8 字符串的长度，每一个中文算一个字符
----@param @string input
----@return @number cnt
+---@param input string
+---@return number
 ---@usage example
 -- local input = "你好World"
 -- print(string.utf8len(input))
@@ -658,40 +666,40 @@ function string.utf8len(input)
 end
 
 --- 替换字符串内容
----@param @string input
----@param @number start index
----@param new context
+---@param input string
+---@param index number
+---@param char string
 ---@return a new string
 function string.replace(str, index, char)
     return table.concat {str:sub(1, index - 1), char, str:sub(index + 1)}
 end
 
 --- 检查字符串是否为指定字符串开头
----@param @string target
----@param @string start
+---@param str string
+---@param start string
 ---@return @boolean
 function string.startswith(str, start)
     return str:sub(1, #start) == start
 end
 
 --- 检查字符串是否以指定字符串结尾
----@param @string target
----@param @string start
+---@param str string
+---@param ending string
 ---@return @boolean
 function string.endswith(str, ending)
     return ending == '' or str:sub(-(#ending)) == ending
 end
 
 --- 四舍五入
----@param a number
----@return a round number
+---@param value number
+---@return number
 function math.round(value)
     return math.floor(value + 0.5)
 end
 
 --- [0, 1]区间限定函数
----@param a number or
----@return a clamped number
+---@param value number
+---@return number
 function math.clamp01(value)
     return math.min(1, math.max(0, value))
 end
@@ -707,7 +715,10 @@ end
 -- myQueue:PrintElement()
 -- myQueue:Clear()
 -- myQueue:PrintElement()
+---@class Queue
 Queue = {}
+
+---创建一个队列对象
 function Queue:New()
     local inst = {
         _first = -1,
@@ -719,6 +730,7 @@ function Queue:New()
     return inst
 end
 
+---判断队列是否为空
 function Queue:IsEmpty()
     if self._size == 0 then
         return true
@@ -819,6 +831,7 @@ end
 -- myStack:PrintElement()
 -- myStack:Clear()
 -- myStack:PrintElement()
+---@class Stack
 Stack = {}
 function Stack:New()
     local inst = {
@@ -894,6 +907,10 @@ function Stack:PrintElement()
     print(str)
 end
 
+---随机函数
+---@param n number
+---@param m number
+---@return number
 function random_m(n, m)
     math.randomseed(os.clock()*math.random(1000000,90000000)+math.random(1000000,90000000))
     if n and m then
@@ -903,6 +920,9 @@ function random_m(n, m)
     end
 end
 
+---随机一个指定位数的数字
+---@param len number
+---@return any
 function randomNumber(len)
     local rt = ""
     for i=1,len,1 do
@@ -915,6 +935,9 @@ function randomNumber(len)
     return rt
 end
 
+---随机一个指定长度的字符串
+---@param len number
+---@return string
 function randomLetter(len)
     local rt = ""
     for i = 1, len, 1 do
@@ -940,9 +963,10 @@ function randomWeightHit(_table)
 	end
 	return index
 end
+
 --- 保留指定的小数位数
--- nNum 源数字
--- n 小数位数
+---@param nNum number 源数字
+---@param n number 小数位数
 function GetPreciseDecimal(nNum, n)
     if type(nNum) ~= "number" then
         return nNum;
@@ -961,7 +985,10 @@ function GetPreciseDecimal(nNum, n)
     return nRet;
 end
 
---表比对函数,返回两个number表中相同的元素
+---表比对函数,返回两个number表中相同的元素
+---@param arr table
+---@param arr_other table
+---@return table
 function Get_Array_Same(arr, arr_other)
     assert(type(arr) == "table" and type(arr_other) == "table")
     local ht_other = {}
@@ -981,7 +1008,11 @@ function Get_Array_Same(arr, arr_other)
     end
     return t_same
 end
+
 --表减法函数,返回第一个表在第二个表中没有的元素
+---@param arr table
+---@param arr_other table
+---@return table
 function Get_Array_Diff(arr, arr_other)
     assert(type(arr) == "table" and type(arr_other) == "table")
     local ht_other = {}
@@ -1001,7 +1032,10 @@ function Get_Array_Diff(arr, arr_other)
     end
     return t_diff	
 end
+
 --- 返回一个方向向量的欧拉角
+---@param fromDir Vector3
+---@return EulerDegree
 function LookRotation(fromDir)
     local eulerAngles = EulerDegree(0, 0, 0)
     eulerAngles.x = math.deg(math.acos(math.sqrt((fromDir.x * fromDir.x + fromDir.z * fromDir.z) / (fromDir.x * fromDir.x + fromDir.y * fromDir.y + fromDir.z * fromDir.z))))
@@ -1021,6 +1055,9 @@ end
 
 --- 在一个起始点和一个终点之间创建一个圆柱体
 ---@type fun(_startPos: any, _endPos: any, _name: string)
+---@param  _startPos Vector3
+---@param  _endPos Vector3
+---@param  _name string
 ---@return any
 function CreateLineBetween2Points(_startPos, _endPos, _name)
     local pos = _startPos + _endPos
