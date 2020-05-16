@@ -23,8 +23,10 @@
 * [项目进度](#项目进度)
 * [IDEA使用方法](#intelliJ-idea)
 * [VS Code使用方法](#vs-code)
+* [赠品-VS Code用户代码片段](#vs-code用户代码片段)
 * [如何贡献](#如何贡献)
 * [编写者](#编写者)
+
 
 
 
@@ -43,6 +45,8 @@
 | LuaFunction api                     |    ✔     |
 | wiki文档api                         |    未知     |
 | api函数注解更改                         |    ✔     |
+| VSCODE用户代码段使用说明                 |    ✔     |
+| IDEA代码模板使用说明                 |    0%    |
 | 长期维护                         |    0%     |
 
 
@@ -95,6 +99,25 @@
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/vscode%E6%B7%BB%E5%8A%A0%E5%B7%A5%E4%BD%9C%E5%8C%BA%E6%96%87%E4%BB%B6%E5%A4%B9.gif?raw=true)
 
+
+# VS Code用户代码片段
+
+## 效果图
+
+
+## 使用方法
+
+1. 复制[lua.json]()中的内容
+
+2. 打开VSCode中的用户代码片段(File->User Snippets)
+
+3. 选择lua
+
+4. 将内容复制到新打开的lua.json中。
+
+5. 目前预置了 **SMod** , **CMod** , **forkv** 三种代码片段，你可以在自己的VSCode中添加，和其他人分享。
+
+
 ## 如何贡献
 
 如果有未被收录的api,可以直接pull到本仓库或者[提一个issue](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)。
@@ -105,4 +128,3 @@ api代码支持 [EmmyLua Doc标注](https://emmylua.github.io/annotation.html)
 * [@马尚](https://github.com/lilith-avatar-sharifma)
 * [@袁晨曦](https://github.com/lilith-avatar-yenyuan)
 * [@陶季传](https://github.com/lilith-avatar-ropztao)
-
