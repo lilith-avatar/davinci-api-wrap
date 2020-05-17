@@ -46,7 +46,7 @@
 	"forkv":{
 		"prefix": "forkv", // 可以改成你想要的单词
 		"body": [
-			"for k,v in pairs(${1}) do",
+			"for k,v in pairs(${1:table}) do",
 			"    ${2:--do something}",
 			"end"
 		]
