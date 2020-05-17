@@ -113,7 +113,7 @@
 
 1. 复制[lua.json](https://github.com/lilith-avatar/davinci-api-wrap/blob/master/lua.json)中的内容
 
-2. 打开VSCode中的用户代码片段(File->User Snippets)
+2. 打开VSCode中的用户代码片段(File->Preferences->User Snippets)
 
 3. 选择lua
 
