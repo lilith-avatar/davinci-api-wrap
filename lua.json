@@ -18,6 +18,7 @@
 			"\n---Update函数",
 			"function ${1:testModule}:Update()",
 			"end",
+			"\nreturn ${1:testModule}"
 		],
 		"description": "创建客户端模块"
 	},
@@ -40,6 +41,7 @@
 			"\n---Update函数",
 			"function ${1:testModule}:Update()",
 			"end",
+			"\nreturn ${1:testModule}"
 		],
 		"description": "创建服务器模块"
 	},
