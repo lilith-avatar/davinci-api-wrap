@@ -1,7 +1,7 @@
 ---创建对象
 ---@param _name string
 ---@return class
-class = function (_name)
+class = function (_name, _super)
     ---@type class
     local re
     return re
