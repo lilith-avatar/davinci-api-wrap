@@ -378,4 +378,14 @@ Enum.ScrollBarType = {
     Horizontal	=1,--	横向卷轴
     Vertical	=2,--	纵向卷轴
 }
+---@class Expression
+Enum.Expression = {
+    Idle	= 0, --	默认状态
+    ClosingEyes	= 1, --	闭眼
+    Laughing	= 2, --	笑
+    Angry	= 3,--	愤怒
+    Crying	= 4,--	哭
+    Scared	= 5,--	害怕
+    Disgusted = 6, --	厌恶
+}
 return Enum
