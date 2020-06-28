@@ -366,4 +366,16 @@ Enum.Origin90 = {
     TopRight = 2,--右上
     BottomRight = 3,--右下
 }
+---@class Enum.ScrollBarShowType
+Enum.ScrollBarShowType = {
+    AlwaysShow=0,--	显示
+    Hide=1,--不显示
+    ShowWhenScrolling=2,--	滚动时显示
+}
+---@class Enum.ScrollBarType
+Enum.ScrollBarType = {
+    None	=0,--	无,
+    Horizontal	=1,--	横向卷轴
+    Vertical	=2,--	纵向卷轴
+}
 return Enum
