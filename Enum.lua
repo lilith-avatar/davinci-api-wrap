@@ -345,4 +345,25 @@ Enum.KeyCode =
     Mouse2=325,--KEY_Enum.KeyCode.Mouse2
     Mouse3=326,--KEY_Enum.KeyCode.Mouse3
 }
+---@class Enum.Origin180
+Enum.Origin180 = {
+    Bottom = 0,--底部
+    Left = 1,--左侧
+    Top = 2,--顶部
+    Right = 3,--右侧
+}
+---@class Enum.Origin360
+Enum.Origin360 = {
+    Bottom = 0,--底部
+    Right = 1,--左侧
+    Top = 2,--顶部
+    Left = 3,--右侧
+}
+---@class Enum.Origin90
+Enum.Origin90 = {
+    BottomLeft = 0,--左下
+    TopLeft = 1,--左上
+    TopRight = 2,--右上
+    BottomRight = 3,--右下
+}
 return Enum
