@@ -5,19 +5,19 @@ local UiTextObject = {}
 UiTextObject.Alpha = 0
 
 ---水平方向的锚点相对于父节点的位置。
-UiTextObject.AnchorsX = Vector2.zero
+UiTextObject.AnchorsX = Vector2.Zero
 
 ---竖直方向的锚点相对于父节点的位置。
-UiTextObject.AnchorsY = Vector2.zero
+UiTextObject.AnchorsY = Vector2.Zero
 
 ---旋转角。
 UiTextObject.Angle = 0
 
 ---文字颜色。
-UiTextObject.Color = Color.zero
+UiTextObject.Color = Color.Zero
 
 ---最终大小。
-UiTextObject.FinalSize = Vector2.zero
+UiTextObject.FinalSize = Vector2.Zero
 
 ---字号。
 UiTextObject.FontSize = 0
@@ -30,13 +30,13 @@ UiTextObject.FontType = nil
 UiTextObject.Name = nil
 
 ---相对于父级的偏移。
-UiTextObject.Offset = Vector2.zero
+UiTextObject.Offset = Vector2.Zero
 
 ---自身的轴点位置。
-UiTextObject.Pivot = Vector2.zero
+UiTextObject.Pivot = Vector2.Zero
 
 ---额外尺寸。
-UiTextObject.Size = Vector2.zero
+UiTextObject.Size = Vector2.Zero
 
 ---文字内容。
 UiTextObject.Text = nil

@@ -79,6 +79,22 @@ end
 function UiJoystickObject:Up()
 end
 
+---开始拖拽摇杆时触发
+---@type SignalEvent
+UiJoystickObject.OnDragBegin = nil
+
+---结束拖拽时触发
+---@type SignalEvent
+UiJoystickObject.OnDragEnd = nil
+
+---拖拽摇杆过程中且摇杆的横纵值发生变化时触发
+---@type SignalEvent
+UiJoystickObject.OnDragMove = nil
+
+---拖拽摇杆过程中触发
+---@type SignalEvent
+UiJoystickObject.OnDragStay = nil
+
 ---交互设备进入该UI所在区域时触发。
 ---@type SignalEvent
 UiJoystickObject.OnEnter = nil

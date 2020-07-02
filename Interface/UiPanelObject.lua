@@ -3,16 +3,16 @@ local UiPanelObject = {}
 
 
 ---水平方向的锚点相对于父节点的位置。
-UiPanelObject.AnchorsX = Vector2.zero
+UiPanelObject.AnchorsX = Vector2.Zero
 
 ---UI自身的矩形包围框在不计算Size与Offset时上下2条边相对于父节点的位置。
-UiPanelObject.AnchorsY = Vector2.zero
+UiPanelObject.AnchorsY = Vector2.Zero
 
 ---是否可以裁剪容器内的UI。
 UiPanelObject.EnableCutting = true
 
 ---最终大小。
-FinalSize = Vector2.zero
+FinalSize = Vector2.Zero
 
 
 ---滑动类型。
@@ -23,10 +23,10 @@ UiPanelObject.MovementType = nil
 UiPanelObject.Name = nil
 
 ---相对于父级的偏移。
-UiPanelObject.Offset = Vector2.zero
+UiPanelObject.Offset = Vector2.Zero
 
 ---自身的轴点位置。
-UiPanelObject.Pivot = Vector2.zero
+UiPanelObject.Pivot = Vector2.Zero
 
 ---卷轴模式。
 ---@type Enum.ScrollBarType
@@ -43,7 +43,7 @@ UiPanelObject.ScrollScale = 0
 UiPanelObject.ShowScrollBar = nil
 
 ---额外尺寸。
-UiPanelObject.Size = Vector2.zero
+UiPanelObject.Size = Vector2.Zero
 
 ---在同层级内显示层下移一层。
 ---@type fun()

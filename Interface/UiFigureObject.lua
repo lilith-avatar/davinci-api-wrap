@@ -2,10 +2,10 @@
 local UiFigureObject = {}
 
 ---水平方向的锚点相对于父节点的位置。
-UiFigureObject.AnchorsX = Vector2.zero
+UiFigureObject.AnchorsX = Vector2.Zero
 
 ---竖直方向的锚点相对于父节点的位置。
-UiFigureObject.AnchorsY = Vector2.zero
+UiFigureObject.AnchorsY = Vector2.Zero
 
 ---旋转角。
 UiFigureObject.Angle = 0
@@ -14,10 +14,10 @@ UiFigureObject.Angle = 0
 UiFigureObject.BackGroundAlpha = 0
 
 ---背景色。
-UiFigureObject.BackgroundColor = Vector3.zero
+UiFigureObject.BackgroundColor = Vector3.Zero
 
 ---边框色。
-UiFigureObject.BorderColor = Vector3.zero
+UiFigureObject.BorderColor = Vector3.Zero
 
 ---边框不透明度。
 UiFigureObject.BorderLineAlpha = 0
@@ -26,16 +26,16 @@ UiFigureObject.BorderLineAlpha = 0
 UiFigureObject.BorderSize = 0
 
 ---最终大小。
-UiFigureObject.FinalSize = Vector2.zero
+UiFigureObject.FinalSize = Vector2.Zero
 
 ---名称。
 UiFigureObject.Name = nil
 
 ---相对于父级的偏移。
-UiFigureObject.Offset = Vector2.zero
+UiFigureObject.Offset = Vector2.Zero
 
 ---自身的轴点位置。
-UiFigureObject.Pivot = Vector2.zero
+UiFigureObject.Pivot = Vector2.Zero
 
 ---动作模式。
 ---@type Enum.AnimationMode
@@ -46,7 +46,7 @@ PlayerInstance.AnimationMode = 0
 UiFigureObject.Shape = nil
 
 ---额外尺寸。
-UiFigureObject.Size = Vector2.zero
+UiFigureObject.Size = Vector2.Zero
 
 ---在同层级内显示层下移一层。
 ---@type fun()

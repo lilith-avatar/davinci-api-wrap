@@ -8,7 +8,7 @@ UiScreenUiObject.Name = nil
 UiScreenUiObject.Order = 0
 
 ---尺寸。
-UiScreenUiObject.Size = Vector2.zero
+UiScreenUiObject.Size = Vector2.Zero
 
 ---在同层级内显示层下移一层。
 ---@type fun()

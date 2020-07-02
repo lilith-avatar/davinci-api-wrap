@@ -11,21 +11,21 @@ UiSurfaceUiObject.Billboard = true
 UiSurfaceUiObject.DisappearDistance = 0
 
 ---可显示的最大尺寸。
-UiSurfaceUiObject.MaxSize = Vector2.zero
+UiSurfaceUiObject.MaxSize = Vector2.Zero
 
 ---可显示的最小尺寸。
-UiSurfaceUiObject.MinSize = Vector2.zero
+UiSurfaceUiObject.MinSize = Vector2.Zero
 
 ---名称。
 UiSurfaceUiObject.Name = nil
 
 ---位置。
-UiSurfaceUiObject.Position = Vector3.zero
+UiSurfaceUiObject.Position = Vector3.Zero
 
 ---旋转角。
-UiSurfaceUiObject.Rotation = EulerDegree.zero
+UiSurfaceUiObject.Rotation = EulerDegree.Zero
 
 ---尺寸。
-UiSurfaceUiObject.Size = Vector2.zero
+UiSurfaceUiObject.Size = Vector2.Zero
 
 return UiSurfaceUiObject
