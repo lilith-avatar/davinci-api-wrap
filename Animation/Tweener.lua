@@ -17,6 +17,13 @@ function Tweener:Resume() end
 ---从当前状态开始反向播放。
 function Tweener:Reverse() end
 
+---销毁插值动画。
+function Tweener:Destroy() end
+
+---使用该方法向目标插值器Tweener传递一张设置表，用以设置Tweener的高级行为。
+---@param tweenSettingDictionary table
+function Tweener:TweenSetting(tweenSettingDictionary) end
+
 ---使用该方法向目标插值器Tweener传递一张设置表，用以设置Tweener的高级行为。
 ---@param tweenSettingDictionary table
 function Tweener:Reverse(tweenSettingDictionary) end

@@ -23,6 +23,6 @@ function CustomEvent:HasConnected(func) end
 function CustomEvent:Wait(time) end
 
 ---触发该事件。
-function CustomEvent:Fire(...) end
+function CustomEvent:Fire(...) end 
 
 return CustomEvent
