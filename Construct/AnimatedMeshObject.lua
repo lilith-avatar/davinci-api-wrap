@@ -1,5 +1,6 @@
----@class AnimatedMeshObject
+---@class AnimatedMeshObject:MeshObject
 local AnimatedMeshObject = {}
+
 AnimatedMeshObject.AngularVelocity = Vector3.Zero
 AnimatedMeshObject.Block = true
 AnimatedMeshObject.CollisionGroup = 0

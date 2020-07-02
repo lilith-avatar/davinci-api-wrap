@@ -1,4 +1,4 @@
----@class DecalObject
+---@class DecalObject:Object
 local DecalObject = {}
 
 DecalObject.DecalColor = Color(1,1,1,1)

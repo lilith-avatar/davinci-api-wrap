@@ -1,4 +1,4 @@
----@class Accessory
+---@class Accessory:Object
 local Accessory = {}
 
 ---角速度。

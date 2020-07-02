@@ -1,4 +1,4 @@
----@class UnionObject
+---@class UnionObject:Object
 local UnionObject = {}
 ---不透明度。
 UnionObject.Alpha = 0

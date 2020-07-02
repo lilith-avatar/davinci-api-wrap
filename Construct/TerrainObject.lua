@@ -1,4 +1,4 @@
----@class TerrainObject
+---@class TerrainObject:Object
 local TerrainObject = {}
 
 ---角速度。
