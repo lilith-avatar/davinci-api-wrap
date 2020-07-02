@@ -18,6 +18,19 @@ localPlayer.HealthGUI = nil
 ---@type ScriptObject
 script = nil
 
+---当参数的值是false或者nil的时候展示一个错误，否则返回所有的参数值。
+---@param value any
+---@param errorMessage string
+function assert(value, errorMessage)
+end
+
+---终止程序最后的保护函数，并且返回参数message所代表的字符串作为出错信息。
+---@param message string
+---@param level number
+function error(message, level)
+end
+
+
 ---阻塞当前脚本指定时长，不影响其他脚本。
 ---@param time number
 ---@type fun(time:number)
@@ -38,6 +51,7 @@ end
 ---@return table
 function require(module)
 end
+
 
 
 
