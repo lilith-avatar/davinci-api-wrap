@@ -5,7 +5,10 @@ local Accessory = {}
 Accessory.AngularVelocity = Vector3.Zero
 
 ---连接点的位置，即拾取后与对应骨骼的相对位置。
-Accessory.AttachPos = EulerDegree(0,0,0)
+Accessory.AttachPos = Vector3(0,0,0)
+
+---连接点的旋转角，即拾取后与对应骨骼的相对旋转角。
+Accessory.AttachRot = EulerDegree(0,0,0)
 
 ---是否带有碰撞
 Accessory.Block = true
