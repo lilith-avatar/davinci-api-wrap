@@ -15,7 +15,7 @@ PlayerInstance.AngularVelocity = Vector3.Zero
 PlayerInstance.AnimationMode = 0
 
 ---玩家的角色形象。
----@type Object
+---@type PlayerAvatarInstance
 PlayerInstance.Avatar = nil
 
 ---是否带有碰撞。
