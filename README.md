@@ -85,7 +85,7 @@
 
 2. 解压 zip
 
-3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) 
+3. 安装 [JDK](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html) 
 
 4. 安装 EmmyLua
 
