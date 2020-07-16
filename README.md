@@ -123,7 +123,7 @@
 
 ## 如何贡献
 
-如果有未被收录的api,可以直接pull到本仓库或者[提一个issue](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)。
+如果有未被收录的api,可以直接push到本仓库或者[提一个issue](https://github.com/lilith-avatar/Davinci-API-Wrap-For-IntelliJ-IDEA/issues/new)。
 
 api代码支持 [EmmyLua Doc标注](https://emmylua.github.io/annotation.html)
 
