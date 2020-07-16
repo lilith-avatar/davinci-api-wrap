@@ -86,6 +86,11 @@ Camera.WorldOffset = Vector3.Zero
 ---摄像机与被观察者间的平视角。
 Camera.Yaw = 0
 
+---摄像机在与被观察者形成的球面内移动至给定的水平与垂直角度
+---@param targetRotation Vector2
+function DeflectionTo(targetRotation)
+end
+
 ---给摄像机添加水平与垂直方向上的角度偏移。
 ---@param movePixel Vector2
 function Camera:CameraMove(movePixel)
@@ -164,6 +169,12 @@ end
 ---@return Vector3
 function Camera:WorldToViewportPoint(worldPoint)
 end
+
+---在摄像机模式改变时触发。
+---@param oldMode Enum.CameraMode
+---@param newMode Enum.CameraMode
+---@return SignalEvent
+Camera.OnCameraModeChanged = nil
 
 
 return Camera

@@ -137,6 +137,24 @@ PlayerInstance.OnLanded = nil
 ---@type SignalEvent
 PlayerInstance.OnSpawn = nil
 
+---在最大血量发生改变时触发。
+---@param oldMaxHealth number
+---@param newMaxHealth number
+---@return SignalEvent
+PlayerInstance.OnMaxHealthChanged = nil
+
+---血条显示方式改变时触发。
+---@param oldDisplayMode Enum.HealthDisplayMode
+---@param newDisplayMode Enum.HealthDisplayMode
+---@return SignalEvent
+PlayerInstance.OnHealthDisplayModeChanged = nil
+
+---姓名板的显示改变时触发。
+---@param oldDisplay boolean
+---@param newDisplay boolean
+---@return SignalEvent
+PlayerInstance.OnDisplayNameChanged = nil
+
 ---状态改变时触发。
 ---@type SignalEvent
 PlayerInstance.OnStateChanged = nil
