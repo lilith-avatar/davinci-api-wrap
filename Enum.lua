@@ -388,4 +388,12 @@ Enum.Expression = {
     Scared	= 5,--	害怕
     Disgusted = 6, --	厌恶
 }
+---@class Enum.CameraMode
+Enum.CameraMode = {
+    Social = 1, --	社交模式
+    Fpp = 2, --	第一人称模式
+    Tpp = 3, --	第三人称模式
+    Custom = 4, --	自定义模式
+    Orbital	= 5, --	轨道模式
+}
 return Enum
