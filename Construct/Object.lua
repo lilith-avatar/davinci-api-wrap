@@ -172,4 +172,11 @@ Object.OnDescendantRemoved = nil
 ---@type SignalEvent
 Object.OnDestroyed = nil
 
+---设置对象的父节点及其相对于父节点的本地位置与本地旋转。
+---@param parent Object
+---@param localPosition Vector3
+---@param localRotation EulerDegree
+---@return SignalEvent
+Object.SetParentTo = nil
+
 return
