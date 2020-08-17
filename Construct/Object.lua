@@ -154,6 +154,18 @@ function Object:SetActive(active) end
 ---@return Object,number,number
 function Object:WaitForChild(childName,timeOut) end
 
+---复制该节点及其所有子嗣节点，并设置复制之后的父节点。
+---@param parent Object
+---@param spawnInWorldSpace boolean
+---@return Object
+function Object:Clone(parent, spawnInWorldSpace) end
+
+---仅复制该节点本身，并设置复制之后的父节点。它的子嗣节点不会被复制。
+---@param parent Object
+---@param spawnInWorldSpace boolean
+---@return Object
+function Object:CloneNode(parent, spawnInWorldSpace) end
+
 ---@type SignalEvent
 Object.OnAncestryChanged = nil
 
