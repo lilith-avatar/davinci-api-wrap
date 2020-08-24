@@ -6,6 +6,7 @@ local Tween = {}
 ---@param duration number
 ---@param easeCurve Enum.Enum.EaseCurve
 ---@type fun(value:any, targetValue:any, duration:number, easeCurve:Enum.EaseCurve)
+---@return Tweener
 function Tween:TweenValue( value, targetValue, duration,easeCurve)
 end
 
@@ -15,6 +16,7 @@ end
 ---@param duration number
 ---@param easeCurve Enum.EaseCurve
 ---@type fun(obj:Object, targetPropertyDictionary:table, duration:number, easeCurve:Enum.EaseCurve)
+---@return Tweener
 function Tween:TweenProperty( obj, targetPropertyDictionary, duration,easeCurve)
 end
 
@@ -24,6 +26,7 @@ end
 ---@param duration number
 ---@param strength number
 ---@type fun(obj:Object, targetPropertyDictionary:table, duration:number, strength:number)
+---@return Tweener
 function Tween:ShakeProperty( obj, targetPropertyDictionary, duration,strength)
 end
 
