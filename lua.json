@@ -11,10 +11,6 @@
 			"    this = self",
 			"    self:InitListener()"
 			"end",
-			"\n---监听函数",
-			"function ${1:testModule}:InitListener()",
-			"    EventUtil.LinkConnects(localPlayer.C_Event, ${1:testModule}, '${1:testModule}', this)",
-			"end",
 			"\n---Update函数",
 			"function ${1:testModule}:Update()",
 			"end",
@@ -33,10 +29,6 @@
 			"function ${1:testModule}:Init()",
 			"    this = self",
 			"    self:InitListener()"
-			"end",
-			"\n---监听函数",
-			"function ${1:testModule}:InitListener()",
-			"    EventUtil.LinkConnects(world.S_Event, ${1:testModule}, '${1:testModule}', this)",
 			"end",
 			"\n---Update函数",
 			"function ${1:testModule}:Update()",
