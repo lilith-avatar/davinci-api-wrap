@@ -30,4 +30,11 @@ end
 function Tween:ShakeProperty( obj, targetPropertyDictionary, duration,strength)
 end
 
+---创建序列
+--- @param obj Object
+--- @param curve Enum.EaseCurve
+--- @return Sequence
+function Tween:Sequence(obj,curve)
+end
+
 return Tween
