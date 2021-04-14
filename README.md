@@ -102,7 +102,7 @@
 
 # VS Code用户代码片段
 
-目前预置了 **SMod** , **CMod** , **forkv** 三种代码片段，你可以在自己的VSCode中添加，和其他人分享。
+目前预置了 `SMod` , `CMod` , `forkv` 三种代码片段，你可以在自己的VSCode中添加，和其他人分享。
 
 ## 效果图
 
@@ -117,7 +117,7 @@
 
 3. 选择lua
 
-4. 将内容复制到新打开的lua.json中。
+4. 将内容复制到新打开的`lua.json`中。
 
 ![](https://github.com/lilith-avatar-yenyuan/doc-image/blob/master/%E6%89%93%E5%BC%80%E7%94%A8%E6%88%B7%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5.gif?raw=true)
 
