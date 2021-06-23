@@ -29,29 +29,27 @@ AudioSource.State = 0
 ---音频音量
 AudioSource.Volume = 0
 
----音频淡出并暂停
----@param FadeTime number
-function AudioSource:FadePause(FadeTime)
+---在音频的某个时间点添加一个触发事件。
+---@param time number
+function AudioSource:AddAudioEvent(time)
 end
 
----音频淡入并播放
----@param FadeTime number
-function AudioSource:FadePlay(FadeTime)
-end
-
----音频淡出并停止播放
----@param FadeTime number
-function AudioSource:FadeStop(FadeTime)
-end
-
----音频淡入并取消暂停，继续播放
----@param FadeTime number
-function AudioSource:FadeUnPause(FadeTime)
-end
-
----只读，可读取此时该音频的播放状态
+---只读，可读取此时该音频的播放状态。
 ---@return Enum.AudioSourceState
 function AudioSource:GetAudioState()
+end
+
+---在特定的位置本地播放音频。
+---@param position Vector3
+---@param volume number
+---@param loop boolean
+---@return Object
+function AudioSource:LocalPlayAtPoint(position,volume,loop)
+end
+
+---在此音频的某个时间点开始播放（调用LocalPlay）。
+---@param time number
+function AudioSource:LocalPlayAtTime(time)
 end
 
 ---暂停音频
@@ -75,5 +73,11 @@ end
 ---取消暂停，继续播放
 function AudioSource:UnPause()
 end
+
+---@type SignalEvent
+AudioSource.OnComplete = nil
+
+---@type SignalEvent
+AudioSource.OnPlay = nil
 
 return AudioSource

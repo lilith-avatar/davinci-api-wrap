@@ -257,6 +257,17 @@ end
 function PlayerInstance:StopCharge()
 end
 
+---此函数用于获得两点之间最短路径，并可以获知寻路的成败结果。
+---@param startPosition Vector3
+---@param endPosition Vector3
+---@param timeOut number
+---@param acceptRadiusStart number
+---@param acceptRadiusEnd number
+---@return table
+---@return Enum.NavMeshPathStatus
+function PlayerInstance:GetWaypoints(startPosition, endPosition, acceptRadiusStart, acceptRadiusEnd)
+end
+
 ---人物以给定的速度播放卸载武器的动作并回到默认的运动状态。
 ---@param speed number
 ---@type fun(speed:number)
